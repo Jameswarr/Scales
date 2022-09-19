@@ -1,11 +1,20 @@
 void setup() {
-  size(500, 500);  //feel free to change the size
-  noLoop(); //stops the draw() function from repeating
-}
-void draw() {
-  //your code here
-}
-void scale(int x, int y) {
-  //your code here
+  size(300, 300);  
+  noLoop(); 
 }
 
+void draw() {
+  for(int y = 0; y<=600; y+=15)
+ for(int x = 0; x<=600; x+=15)
+    scale(x, y);
+   
+}
+void scale(int x, int y){
+  colorMode(HSB, 225);
+  color c = color(0,126,255);
+  fill(c);
+arc(x, y+10, 190, 80, 0, PI+QUARTER_PI, PIE);
+float value = saturation(c);
+fill(value);
+arc(x, y+20, 100, 90, 0, PI+QUARTER_PI, PIE);
+}
