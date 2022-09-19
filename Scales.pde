@@ -13,8 +13,8 @@ void scale(int x, int y){
   colorMode(HSB, 225);
   color c = color(0,126,255);
   fill(c);
-arc(x, y+10, 190, 80, 0, PI+QUARTER_PI, PIE);
+arc(x, y+10, 90, 180, 0, PI+QUARTER_PI, PIE);
 float value = saturation(c);
 fill(value);
-arc(x, y+20, 100, 90, 0, PI+QUARTER_PI, PIE);
+arc(x, y+20, 100, 190, 0, PI+QUARTER_PI, PIE);
 }
