@@ -1,5 +1,5 @@
 void setup() {
-  size(300, 300);  
+  size(200, 200);  
   noLoop(); 
 }
 
@@ -13,8 +13,8 @@ void scale(int x, int y){
   colorMode(HSB, 225);
   color c = color(0,126,255);
   fill(c);
-arc(x, y+10, 190, 80, 0, PI+QUARTER_PI, PIE);
+ellipse(x, y+10, 90, 180);
 float value = saturation(c);
 fill(value);
-arc(x, y+20, 100, 90, 0, PI+QUARTER_PI, PIE);
+ellipse(x, y+20, 100, 190);
 }
